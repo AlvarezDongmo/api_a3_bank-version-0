@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📄 Cahier des Charges — API Bancaire</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f0f2f5; }
+
+    header {
+      background: #1a3c5e;
+      color: white;
+      padding: 16px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 { font-size: 20px; }
+    header p { font-size: 12px; opacity: 0.8; margin-top: 3px; }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+    }
+    .btn-white {
+      background: white;
+      color: #1a3c5e;
+    }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .pdf-container {
+      width: 100%;
+      height: calc(100vh - 70px);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .fallback {
+      display: none;
+      padding: 40px;
+      text-align: center;
+    }
+    .fallback p { color: #666; margin-bottom: 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📄 Cahier des Charges — Système Bancaire API</h1>
+    <p>Auteur : Alvarez Dongmo &nbsp;|&nbsp; alvarez3tech.com</p>
+  </div>
+  <div class="actions">
+    <a class="btn btn-white" href="https://drive.google.com/file/d/1tFt11OT7urDbAIFX_XdT_BGTSxstli_n/view" target="_blank">
+      🔗 Ouvrir dans Drive
+    </a>
+    <a class="btn btn-outline" href="/api-docs">
+      📚 Swagger API
+    </a>
+  </div>
+</header>
+
+<div class="pdf-container">
+  <iframe
+    src="https://drive.google.com/file/d/1tFt11OT7urDbAIFX_XdT_BGTSxstli_n/preview"
+    allow="autoplay"
+    title="Cahier des charges"
+  ></iframe>
+</div>
+
+</body>
+</html>
